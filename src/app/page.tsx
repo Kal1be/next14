@@ -44,7 +44,9 @@ export default function Home() {
    </div>
    <Body/>
    <Second/>
-   <Signup/>
+  <div className="px-4">
+  <Signup/>
+  </div>
    <Tutor/>
    </div>
   );

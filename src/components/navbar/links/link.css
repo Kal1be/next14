@@ -1,6 +1,9 @@
 #btn{
     display: flex;
 }
+.faclose{
+    display: none;
+}
 
 
 @media(max-width:756px){

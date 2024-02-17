@@ -25,7 +25,7 @@ return()=>{
 }
   },[navbar])
   return (
- <div>
+ <div className="my-nav">
     {/*+++++++++++++++++++++++_ the first navbar and is element++++++++++++++++++++++++++++++++ */}
        <div className='flex justify-between items-center md:py-2 py-2 bg-white md:px-8 px-2 '>
     <div>

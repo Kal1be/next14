@@ -1,10 +1,33 @@
+"use client"
 import React from 'react'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+
+
+const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+      slidesToSlide: 3 // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+      slidesToSlide: 2 // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    }
+  };
 
 function Tutor() {
   return (
     <div>
-        <div className='md:flex gap-36 justify-around mt-24'>
-            <h3 className='text-6xl text-blue-950 font-extrabold'>Tutor</h3>
+        <div className='md:flex gap-36 justify-around mt-24 px-4'>
+            <h3 className='text-6xl text-blue-950 font-extrabold my-10 md:my-0'>Tutor</h3>
             <div className='md:flex gap-8'>
               <div>  <img src="/team1.jpg" alt="" />
               <h3 className='text-4xl font-bold text-green-400 my-4'>John <br />
@@ -12,7 +35,7 @@ Williams</h3>
 <p className='font-medium text-lg opacity-65'>John is the leading SEO specialist at iStep Ltd <br />
     with 10+ years of professional experience.</p>
 </div>
-<div>
+<div className='my-4'>
     <img src="/team2.jpg" alt="" />
     <h3 className='text-4xl font-bold text-green-400 my-4'>Peter <br /> Smith</h3>
     <p className='font-medium text-lg opacity-65'>Founder and owner of SEOPro, an <br />award-winning SEO & marketing agency.
@@ -22,17 +45,45 @@ Williams</h3>
         </div>
 {/* the second one ++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
 
-        <div className='mt-20'>
+        <div className='mt-20 z-10'>
 <h3 className='text-center text-5xl font-extrabold text-blue-950'>Course program</h3>
 <p className='font-medium text-lg opacity-65 text-center my-3'>Learn more about the program of our upcoming data science course in details.</p>
-
-<div className='container border h-[50vh] mx-10 my-6'>
-
+<Carousel
+  swipeable={false}
+  draggable={false}
+  showDots={true}
+  responsive={responsive}
+  ssr={true} // means to render carousel on server-side.
+  infinite={true}
+//   autoPlay={this.props.deviceType !== "mobile" ? true : false}
+  autoPlaySpeed={1000}
+  keyBoardControl={true}
+//   customTransition="all .5"
+//   transitionDuration={500}
+  containerClass="carousel-container"
+  removeArrowOnDeviceType={["tablet", "mobile"]}
+//   deviceType={this.props.deviceType}
+  dotListClass="custom-dot-list-style"
+  itemClass="carousel-item-padding-40-px"
+>
+<div className='container border h-[50vh] md:mx-10 my-6'>
+<h3>kalibe felix</h3>
 </div>
+<div className='container border h-[50vh] md:mx-10 my-6'>
+<h2>yahoulbofelix@</h2>
+</div>
+<div className='container border h-[50vh] md:mx-10 my-6'>
+<h3>gmail</h3>
+</div>
+<div className='container border h-[50vh] md:mx-10 my-6'>
+<h3>dela dgfcgfcgsssssssssssssssssssssss</h3>
+</div>
+</Carousel>;
+
 
 {/* the part of the meeting people ++++++++++++++++++++++++++++++++++++++++++++++++++++++_____________ */}
-<div className='mt-20 px-12 flex gap-24'>
-    <img src="/meeting.jpg" alt="" />
+<div className='mt-20 md:px-12 px-4 md:flex gap-24'>
+    <img src="/meeting.jpg" alt="" className='my-4 md:my-0'/>
     <div>
         <h2 className='text-6xl text-blue-950 font-extrabold'>Venue</h2>
         <p className='font-medium text-lg opacity-65 my-8'>Our course will take place at one of the biggest modern educational facilities, the Lintense Education Hub. It can host up to 150 participants and guests.

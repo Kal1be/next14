@@ -16,7 +16,7 @@ working on large projects</h3>
 SEO enthusiasts</h3>
       </div>
       <div>
-        <img src="/trace.png" alt="" className='w-24'/>
+        <img src="/good.jpeg" alt="" className='w-24'/>
         <h3 className='text-xl text-blue-950 font-bold'>SEO geeks and  <br />
          research</h3>
       </div>

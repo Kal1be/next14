@@ -28,7 +28,7 @@ const lins =[
 function Links() {
   return (
     <div className='md:flex gap-12 font-bold items-center text-blue-950 ' id='btn'>
-       <div className='flex jus'> <FontAwesomeIcon icon={faClose} className=''/></div>
+       <div className='flex jus'> <FontAwesomeIcon icon={faClose} className='faclose'/></div>
        {lins.map(lin=>{
         return(
             <h3 key={lin.path} className='my-4 md:my-0' id='linked'><Link href={lin.path} >{lin.title}</Link></h3>
