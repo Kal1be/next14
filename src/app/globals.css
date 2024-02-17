@@ -2,32 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root{
+    --bg:#02021b;
+    --text:white;
+    ---btn:#3673fd;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: var(--bg); */
+}
+#mypa{
+    line-height: 3rem;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+#bord{
+    border-left: 1px solid rgb(226, 226, 226);
+}
+#btom{
+    border-bottom: 1px solid gray;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.containe{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+}
+@media(max-width:756px){
+    #mypa{
+        line-height: 2.1rem;
+    }  
+    #bord{
+        border-left:none;
+        border-top: 2px solid rgb(226, 226, 226);
+    }
+    .barnav{
+        display: block
+    }
+    
+    .barnav div:nth-child(1){
+        height: 3px;
+        width: 27px;
+        background-color: black;
+        margin:5px 2px;
+    }
+    .barnav div:nth-child(2){
+        height: 3px;
+        width: 27px;
+        background-color: black;
+        margin:5px 2px;
+    
+    }
+    .barnav div:nth-child(3){
+        height: 3px;
+        width: 27px;
+        background-color: black;
+        margin:5px 2px;
+    
+    }
 }

@@ -1,0 +1,16 @@
+#btn{
+    display: flex;
+}
+
+
+@media(max-width:756px){
+    #btn{
+        display: block;
+        flex-direction: column !important;
+    }
+    #linked{
+        border-bottom: 2px solid gray;
+        padding: 10px 2px;
+        margin: 20px 0;
+    }
+}

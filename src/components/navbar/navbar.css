@@ -1,0 +1,40 @@
+/* t_______+++++++++++++++++ the navbar apparition on the scroll when reach 150px _++++++++++++++++ */
+
+#nav{
+    background-color: white;
+    position: fixed;
+    top: -200px;
+    width: 100%;
+    display: block;
+    /* transition: top 0.3s; */
+    z-index: 100;
+    padding-top: 0 !important;
+   
+  }
+  #header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    /* transition: top 0.3s; */
+    z-index: 100;
+    padding-top: 0 !important;
+  }
+
+  @media(max-width:756px){
+    #navbar{
+      position:fixed;
+      display: none;
+      width: 100%;
+      left: 0;
+      padding: 10px 15px;
+      gap: 12;
+      height: 100vh;
+      display: flex;
+      background: white;
+      flex-direction: column;
+      justify-content: space-between;
+      top: 0;
+    }
+  }
