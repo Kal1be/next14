@@ -48,8 +48,8 @@ Williams</h3>
         </div>
 {/* the second one ++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
 
-        <div className='mt-20 z-10'>
-<h3 className='text-center text-5xl font-extrabold text-blue-950'>Course program</h3>
+        <div className='mt-20 z-10 px-2'>
+<h3 className='text-center md:text-5xl text-3xl font-extrabold text-blue-950'>Course program</h3>
 <p className='font-medium text-lg opacity-65 text-center my-3'>Learn more about the program of our upcoming data science course in details.</p>
 <Carousel
   swipeable={false}
