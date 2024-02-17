@@ -1,8 +1,11 @@
 "use client"
+import Image from 'next/image';
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
+import meeting from "../../../public/meeting.jpg"
+import team1 from "../../../public/team1.jpg"
+import team2 from "../../../public/team2.jpg"
 
 
 const responsive = {
@@ -29,14 +32,14 @@ function Tutor() {
         <div className='md:flex gap-36 justify-around mt-24 px-4'>
             <h3 className='text-6xl text-blue-950 font-extrabold my-10 md:my-0'>Tutor</h3>
             <div className='md:flex gap-8'>
-              <div>  <img src="/team1.jpg" alt="" />
+              <div>  <Image src={team1} alt=""  width={400} height={400}/>
               <h3 className='text-4xl font-bold text-green-400 my-4'>John <br />
 Williams</h3>
 <p className='font-medium text-lg opacity-65'>John is the leading SEO specialist at iStep Ltd <br />
     with 10+ years of professional experience.</p>
 </div>
-<div className='my-4'>
-    <img src="/team2.jpg" alt="" />
+<div className='my-4 md:my-0'>
+    <Image src={team2} alt="" width={400} height={400} />
     <h3 className='text-4xl font-bold text-green-400 my-4'>Peter <br /> Smith</h3>
     <p className='font-medium text-lg opacity-65'>Founder and owner of SEOPro, an <br />award-winning SEO & marketing agency.
 </p>
@@ -83,7 +86,7 @@ Williams</h3>
 
 {/* the part of the meeting people ++++++++++++++++++++++++++++++++++++++++++++++++++++++_____________ */}
 <div className='mt-20 md:px-12 px-4 md:flex gap-24'>
-    <img src="/meeting.jpg" alt="" className='my-4 md:my-0'/>
+    <Image src={meeting} width={500} height={500} alt="" className='my-4 md:my-0'/>
     <div>
         <h2 className='text-6xl text-blue-950 font-extrabold'>Venue</h2>
         <p className='font-medium text-lg opacity-65 my-8'>Our course will take place at one of the biggest modern educational facilities, the Lintense Education Hub. It can host up to 150 participants and guests.

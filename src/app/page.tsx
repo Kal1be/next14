@@ -3,6 +3,7 @@ import Second from "@/components/component/Second";
 import Signup from "@/components/component/Signup";
 import Tutor from "@/components/component/Tutor";
 import Image from "next/image";
+import first from "../../public/first.png"
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
          search consoles & web servers with our new data science course.</p>
     </div>
     <div>
-      <img src="/first.png" alt="" className="lg:w-[650px]"/>
+      <Image src={first} alt="" width={300} height={400} className="lg:w-[650px]"/>
     </div>
    </div>
    <div className="md:flex -my-12 bg-white justify-between shadow-2xl border  md:mx-12 ">
